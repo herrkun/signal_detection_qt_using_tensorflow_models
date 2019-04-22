@@ -1,2 +1,5 @@
 # signal_detection_qt_using_tensorflow_models
 A QT project that using tensorflow(lstm writen by python) model to detecte the signal whether have some  abnormal.
+## describtion  
+* **This is a qt project that used for signal detection, it mainly include four threads also can be thought as four parts, the first is a loop showing for main window(main function),second thread is for processing python scrip(tensorflow model is written by python) and receving data form the retuuring,third thread is for statues displaying,as python model runing,we can't get the parameters inside, so i write a txt files for sharing the parameters to the qt project, fourth thread is for diaplaying the signal, data wass predicted and returned from a tf model,and in this thread we read the data to daisplay along with the second thread, we use a queue struction for data saving ,reading and poping.** 
+* **The python scrip is under the debug dir,it was called by qt and receving the parameters from qt main wiondow, it mainly include data reding\data pre_processing\model reading\model prediction\and data saving.**
